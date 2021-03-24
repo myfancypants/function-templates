@@ -3,7 +3,7 @@
   "templates": {
     "blank": [],
     "hello-world": [],
-    "hello-voice": [
+"hello-voice": [
       {
         "key": "TWILIO_VOICE_WEBHOOK_URL",
         "required": true,
@@ -11,6 +11,16 @@
         "description": "The path to the webhook",
         "link": null,
         "default": "/hello-voice",
+        "configurable": false
+      },
+      {
+        "key": "GOOGLE_CREDENTIALS",
+        "contentKey": "GOOGLE_CREDENTIALS_CONTENT",
+        "required": true,
+        "format": "text",
+        "description": "Credentials file",
+        "link": null,
+        "default": "/credentials.json",
         "configurable": false
       }
     ],
